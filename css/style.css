@@ -71,7 +71,7 @@ a:focus {
 
 
 .navbar {
-    background-color:#4c4752 !important;
+    background-color:#b486eb !important;
     padding: 0.5rem 1rem;
    
   }
@@ -439,11 +439,11 @@ a:focus {
 .about .about-img::before {
     position: absolute;
     content: "";
-    top: -60px;
+    top: -20px;
     right: 60px;
     bottom: 60px;
-    left: -60px;
-    background: #1d2434;
+    left: -20px;
+    background: #b486eb;
     z-index: 0;
 }
 
