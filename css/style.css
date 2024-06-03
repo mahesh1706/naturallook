@@ -320,7 +320,41 @@ a:focus {
         letter-spacing: 0;
     }
 }
+.marquee-container {
+    width: 100%;
+ 
+    background-color: #b486eb;
+    color: #fff;
+    white-space: nowrap;
+}
 
+.marquee {
+    display: inline-block;
+    
+}
+
+.marquee span {
+    display: inline-block;
+    
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .marquee {
+        animation: marquee 10s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee {
+        animation: marquee 7s linear infinite;
+    }
+}
 
 /*******************************/
 /******* Page Header CSS *******/
