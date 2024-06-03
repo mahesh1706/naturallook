@@ -18,14 +18,14 @@ h6 {
 }
 
 a {
-    color: #454545;
+    color: #000000;
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #D5B981;
+    color:#b486eb  ;
     outline: none;
     text-decoration: none;
 }
@@ -42,7 +42,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #D5B981;
+    background: #000000;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -55,15 +55,15 @@ a:focus {
 }
 
 .back-to-top:hover {
-    background: #1d2434;
+    background: #000000;
 }
 
 .back-to-top:hover i {
-    color: #D5B981;
+    color: #000000;
 }
 
 .back-to-top i {
-    color: #1d2434;
+    color: #000000;
     padding-top: 10px;
 }
 
@@ -84,7 +84,7 @@ a:focus {
     align-items: center;
   }
   .social-icons a {
-    color: white;
+    color: black;
     margin-left: 10px;
     font-size: 1.5rem;
   }
@@ -189,7 +189,7 @@ a:focus {
     display: block;
     width: 80px;
     height: 80px;
-    background: #1D2434;
+    background: #000000;
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
 }
@@ -204,13 +204,13 @@ a:focus {
     display: block;
     width: 80px;
     height: 80px;
-    background: #1D2434;
+    background: #000000;
     border-radius: 50%;
     transition: all 200ms;
 }
 
 .hero .btn-play:hover:after {
-    background-color: darken(#1D2434, 10%);
+    background-color: darken(#b486eb , 10%);
 }
 
 .hero .btn-play img {
@@ -504,16 +504,16 @@ a:focus {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #1d2434;
-    border: 2px solid #1d2434;
+    color: #b486eb;
+    border: 2px solid #b486eb;
     border-radius: 0;
     background: none;
     transition: .3s;
 }
 
 .about .about-text a.btn:hover {
-    color: #D5B981;
-    background: #1d2434;
+    color: black;
+    background: white;
 }
 
 @media (max-width: 767.98px) {
@@ -734,90 +734,24 @@ a:focus {
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/
-.testimonial {
-    position: relative;
-    margin: 45px 0;
-    padding: 120px 0;
-    background: linear-gradient(rgba(29, 36, 52, 1), rgba(29, 36, 52, .5), rgba(29, 36, 52, 1)), url(../img/testimonial-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.testimonial .container {
-    max-width: 700px;
-}
-
-.testimonial .testimonials-carousel {
-    position: relative;
-    width: 100%;
-}
-
-.testimonial .testimonial-item {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.testimonial .testimonial-item img {
-    width: 60px;
-    border-radius: 60px;
-    margin-bottom: 25px;
-}
-
-.testimonial .testimonial-item p {
-    color: #ffffff;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.testimonial .testimonial-item h2 {
-    color: #D5B981;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.testimonial .testimonial-item h3 {
-    color: #999999;
-    font-size: 16px;
-    font-weight: 300;
-    margin: 0;
-}
-
-.testimonial .owl-nav {
-    width: 135px;
-    margin-top: 45px;
-    display: flex;
-}
-
-.testimonial .owl-nav .owl-prev,
-.testimonial .owl-nav .owl-next {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #D5B981;
-    background: #1d2434;
-    font-size: 22px;
-    transition: .3s;
-}
-
-.testimonial .owl-nav .owl-next {
-    margin-left: 15px;
-}
-
-.testimonial .owl-nav .owl-prev:hover,
-.testimonial .owl-nav .owl-next:hover {
-    color: #1d2434;
-    background: #D5B981;
-}
-
+.testimonial-carousel .owl-dots {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .testimonial-carousel .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    background: #dddddd;
+  }
+  
+  .testimonial-carousel .owl-dot.active {
+    background: #17a2b8;
+  }
+  
 
 /*******************************/
 /*********** Blog CSS **********/
@@ -1162,7 +1096,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #1d2434;
+    background: #b486eb;
 }
 
 .footer .footer-contact,
@@ -1170,7 +1104,7 @@ a:focus {
 .footer .footer-newsletter {
     position: relative;
     margin-bottom: 45px;
-    color: #999999;
+    color: #b486eb;
 }
 
 .footer .footer-contact h2,
@@ -1180,13 +1114,13 @@ a:focus {
     margin-bottom: 30px;
     font-size: 22px;
     font-weight: 700;
-    color: #D5B981;
+    color: white;
 }
 
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
-    color: #999999;
+    color: white;
     transition: .3s;
 }
 
@@ -1219,7 +1153,7 @@ a:focus {
 .footer .footer-social a i {
     margin-right: 15px;
     font-size: 18px;
-    color: #D5B981;
+    color:white;
 }
 
 .footer .footer-social a:last-child i {
@@ -1227,7 +1161,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #999999;
+    color:red;
 }
 
 .footer .footer-newsletter .form {
