@@ -107,35 +107,38 @@
                             </div>
                             <div style="background-color: #b486eb;" class="card-body rounded-bottom  p-5">
                                 <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-0 p-4 name" placeholder="Your Name" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control border-0 p-4 number" placeholder="Your Number" required="required" />
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="custom-select border-0 px-4 branch" style="height: 47px;">
-                                            <option selected>Select a Branch</option>
-                                            <option value="Branch 1">Branch 1</option>
-                                            <option value="Branch 2">Branch 2</option>
-                                            <option value="Branch 3">Branch 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="custom-select border-0 px-4 service" style="height: 47px;">
-                                            <option selected>Select A Service</option>
-                                            <option value="Service 1">Service 1</option>
-                                            <option value="Service 2">Service 2</option>
-                                            <option value="Service 3">Service 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="time" class="form-control border-0 p-4 timing" placeholder="Enter the Timing" required="required" />
-                                    </div>
-                                    <div>
-                                        <button style="background-color: black;"class="btn btn-secondary btn-block border-0 py-3" type="button" onclick="sendWhatsApp();">Book Now</button>
-                                    </div>
-                                </form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 p-4 name" placeholder="Your Name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control border-0 p-4 number" placeholder="Your Number" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select border-0 px-4 branch" style="height: 47px;">
+                                        <option selected>Select a Branch</option>
+                                        <option value="Branch 1">Branch 1</option>
+                                        <option value="Branch 2">Branch 2</option>
+                                        <option value="Branch 3">Branch 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select border-0 px-4 service" style="height: 47px;">
+                                        <option selected>Select A Service</option>
+                                        <option value="Service 1">Service 1</option>
+                                        <option value="Service 2">Service 2</option>
+                                        <option value="Service 3">Service 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-control border-0 p-4 date" placeholder="Enter the Date" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="time" class="form-control border-0 p-4 time" placeholder="Enter the Timing" required="required" />
+                                </div>
+                                <div>
+                                    <button style="background-color: black;" class="btn btn-secondary btn-block border-0 py-3" type="button" onclick="sendWhatsApp();">Book Now</button>
+                                </div>
+                            </form>
                             </div>
                         </div>
                     </div>
@@ -543,25 +546,27 @@
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         <script>
-            function sendWhatsApp() {
-                var phoneNumber = "6382043432";
-            
-                var name = document.querySelector(".name").value;
-                var number = document.querySelector(".number").value;
-                var branch = document.querySelector(".branch").value;
-                var service = document.querySelector(".service").value;
-                var timing = document.querySelector(".timing").value;
-                
-                var url = "https://wa.me/" + phoneNumber + "?text="
-                    + "Name: " + encodeURIComponent(name) + "%0a"
-                    + "Number: " + encodeURIComponent(number) + "%0a"
-                    + "Branch: " + encodeURIComponent(branch) + "%0a"
-                    + "Service: " + encodeURIComponent(service) + "%0a"
-                    + "Timing: " + encodeURIComponent(timing)
-            
-                window.open(url, '_blank').focus();
-            }
-        </script>
+                function sendWhatsApp() {
+                    var phoneNumber = "6382043432";
+
+                    var name = document.querySelector(".name").value;
+                    var number = document.querySelector(".number").value;
+                    var branch = document.querySelector(".branch").value;
+                    var service = document.querySelector(".service").value;
+                    var date = document.querySelector(".date").value;
+                    var time = document.querySelector(".time").value;
+
+                    var url = "https://wa.me/" + phoneNumber + "?text=" +
+                        "Name: " + encodeURIComponent(name) + "%0a" +
+                        "Number: " + encodeURIComponent(number) + "%0a" +
+                        "Branch: " + encodeURIComponent(branch) + "%0a" +
+                        "Service: " + encodeURIComponent(service) + "%0a" +
+                        "Date: " + encodeURIComponent(date) + "%0a" +
+                        "Timing: " + encodeURIComponent(time);
+
+                    window.open(url, '_blank').focus();
+                }
+            </script>
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
